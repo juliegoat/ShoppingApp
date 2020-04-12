@@ -6,7 +6,7 @@
     margin-bottom: $spacing-medium;
 
     &__company {
-        border-radius: 4px;
+        border-radius: 4px 4px 0px 0px;
         color: white;
         background-color: #002798;
 
@@ -23,9 +23,9 @@
         }
 
         &-nav {
-            padding: $spacing-small $spacing-medium;
+            padding: 10px $spacing-medium;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             border-top: 1px solid #0935b5;
 
             ul {

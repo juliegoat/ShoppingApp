@@ -17,6 +17,16 @@ const StoreFront = () => {
                     <div className="p-store-front__company-nav">
                         <ul>
                             <li>
+                                TAGS:
+                            </li>
+
+                            <li>
+                                SKINCARE, SUSTAINABLE, NATURAL
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
                                 <a href="https://lovekinship.com/">
                                     DISCOVER MORE
                                 </a>
