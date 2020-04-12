@@ -8,13 +8,21 @@ import './Navigation.scss';
 const Navigation = () => {
     return (
         <nav className="p-navigation">
+            <div className="p-navigation__bar" />
+
             <Container>
                 <ul>
                     <li>
                         <Link to="/">
-                            <strong>
-                                TheMallTogether
-                            </strong>
+                            <span className="p-navigation__mark">
+                                <strong>
+                                    TheMallTogether
+                                </strong>
+
+                                <small>
+                                    Interactive Shopping
+                                </small>
+                            </span>
                         </Link>
                     </li>
                 </ul>

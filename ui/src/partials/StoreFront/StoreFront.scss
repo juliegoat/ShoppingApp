@@ -1,13 +1,14 @@
 @import '../../styles/variables';
 
 .p-store-front {
+    border-radius: 4px;
     box-shadow: 0 0 0 1px rgba(16,22,26,.1), 0 0 0 rgba(16,22,26,0), 0 1px 1px rgba(16,22,26,.2);
     margin-bottom: $spacing-medium;
 
     &__company {
+        border-radius: 4px 4px 0px 0px;
         color: white;
         background-color: #002798;
-        border-radius: 4px 4px 0px 0px;
 
         &-description {
             max-width: 650px;
@@ -22,9 +23,9 @@
         }
 
         &-nav {
-            padding: $spacing-small $spacing-medium;
+            padding: 10px $spacing-medium;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             border-top: 1px solid #0935b5;
 
             ul {
@@ -32,10 +33,13 @@
 
                 li {
                     display: inline-block;
+                    font-size: 13px;
                     text-decoration: none;
 
                     + li {
-                        margin-left: 10px;
+                        margin-left: $spacing-small;
+                        border-left: 1px solid #0935b5;
+                        padding-left: $spacing-small;
                     }
                 }
             }
@@ -43,6 +47,7 @@
     }
 
     &__products {
+        border-radius: 4px;
         display: flex;
         background-color: white;
         padding: $spacing-medium;
