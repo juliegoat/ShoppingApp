@@ -1,5 +1,29 @@
+@import '../../styles/variables';
+
 .c-product-card {
-    background-color: red;
     width: 250px;
-    height: 250px;
+    
+    h2 {
+        font-size: 18px;
+    }
+
+    &__image {
+        height: 250px;
+        margin-bottom: $spacing-small;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left;
+        }
+    }
+
+    &__description {
+        margin-bottom: $spacing-small;
+    }
+
+    + .c-product-card {
+        margin-left: 25px;
+    }
 }

@@ -5,13 +5,14 @@ import './Button.scss';
 interface IButtonProps {
     label: string,
     handleClick?: any,
+    color?: string
 }
 
 const Button = (props: IButtonProps) => {
-    const { label, handleClick } = props;
+    const { label, handleClick, color } = props;
 
     return (
-        <button className="c-button" onClick={handleClick}>
+        <button className="c-button" onClick={handleClick} style={{ backgroundColor: color }}>
             {label}
         </button>
     )
