@@ -26,7 +26,7 @@ const HomePage = (props: IHomePage) => {
 
                 <iframe src="https://api-demo.daily.co/​xJEfnyy910HCyhDAgdu1"></iframe>
 
-                <Button label="NEXT STORE" color="red" />
+                <Button label="NEXT STORE" />
             </Container>
         </>
     )

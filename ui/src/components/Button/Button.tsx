@@ -12,7 +12,7 @@ const Button = (props: IButtonProps) => {
     const { label, handleClick, color } = props;
 
     return (
-        <button className="c-button" onClick={handleClick} style={{ backgroundColor: color }}>
+        <button className="c-button" onClick={handleClick} style={{ backgroundColor: color && color || 'red' }}>
             {label}
         </button>
     )

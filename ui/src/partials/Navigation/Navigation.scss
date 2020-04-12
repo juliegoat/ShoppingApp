@@ -1,10 +1,15 @@
 @import '../../styles/variables';
 
 .p-navigation {
-    padding: 20px 0px;
+    padding: 10px 0px;
     margin-bottom: $spacing-medium;
     background-color: #1D1D2E;
     color: white;
+
+    .c-container {
+        display: flex;
+        justify-content: center;
+    }
 
     ul {
         display: block;
@@ -15,6 +20,20 @@
             + li {
                 margin-left: 15px;
             }
+        }
+    }
+
+    &__mark {
+        text-align: center;
+        
+        strong {
+            font-family: $font-secondary;
+            font-size: 21px;
+        }
+
+        small {
+            display: block;
+            margin: -2px 0px;
         }
     }
 }
