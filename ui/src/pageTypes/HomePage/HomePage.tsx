@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container } from '../../components';
+import { Container, Button } from '../../components';
 import { StoreFront, Cart } from '../../partials';
 
 interface IHomePage {
@@ -23,6 +23,13 @@ const HomePage = (props: IHomePage) => {
                 </div>
 
                 <StoreFront />
+
+                <Button label="NEXT STORE" />
+                <ul id="messages"></ul>
+                <form action="">
+                    <input id="m" autoComplete="off" /><button>Send</button>
+                </form>
+
             </Container>
         </>
     )

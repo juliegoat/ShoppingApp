@@ -4,18 +4,38 @@
     color: white;
 
     &__company {
-        display: flex;
-        justify-content: space-between;
         background-color: #002798;
-        padding: $spacing-medium;
         border-radius: 4px 4px 0px 0px;
 
         &-description {
-            max-width: 700px;
+            max-width: 650px;
+            margin: 0 auto;
+            text-align: center;
+            padding: $spacing-small $spacing-medium;
             
             p {
                 opacity: 0.7;
                 margin-bottom: $spacing-small;
+            }
+        }
+
+        &-nav {
+            padding: $spacing-small $spacing-medium;
+            display: flex;
+            justify-content: flex-end;
+            border-top: 1px solid #0935b5;
+
+            ul {
+                display: block;
+
+                li {
+                    display: inline-block;
+                    text-decoration: none;
+
+                    + li {
+                        margin-left: 10px;
+                    }
+                }
             }
         }
     }
