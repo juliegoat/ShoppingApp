@@ -23,26 +23,26 @@ const NewSessionPage = (props: INewSessionPage) => {
 
                 <Card width="600px">
                     <div>
-                        <h2 class="form-header">What are you shopping for?</h2>
-                        <button onClick="turngreen">Sweaters</button>
-                        <button onClick="turngreen">Candles</button>
-                        <button onClick="turngreen">Make-up</button>
-                        <button onClick="turngreen">Snacks</button>
-                        <button onClick="turngreen">Toilet Paper</button>
-                        <button onClick="turngreen">Just browsing!</button>
+                        <h2 className="form-header">What are you shopping for?</h2>
+                        <button>Sweaters   </button>
+                        <button>Candles   </button>
+                        <button>Make-up   </button>
+                        <button>Snacks   </button>
+                        <button>Toilet Paper   </button>
+                        <button>Just browsing!   </button>
 
-                        <h2 class="form-header">What kind of shops do you like?</h2>
-                        <button onClick="turngreen">Local to me</button>
-                        <button onClick="turngreen">Women-owned</button>
-                        <button onClick="turngreen">Sustainably-sourced</button>
-                        <button onClick="turngreen">No Preference!</button>
+                        <h2 className="form-header">What kind of shops do you like?</h2>
+                        <button>Local to me   </button>
+                        <button>Women-owned   </button>
+                        <button>Sustainably-sourced   </button>
+                        <button>No Preference!   </button>
 
-                        <h2 class="form-header">What kind of price range are you looking at?</h2>
-                        <button onClick="turngreen">$</button>
-                        <button onClick="turngreen">$$</button>
-                        <button onClick="turngreen">$$$</button>
-                        <button onClick="turngreen">$$$$</button>
-                        <button onClick="turngreen">I'll worry about that later!</button>
+                        <h2 className="form-header">What kind of price range are you looking at?</h2>
+                        <button>$   </button>
+                        <button>$$   </button>
+                        <button>$$$   </button>
+                        <button>$$$$   </button>
+                        <button>I'll worry about that later!   </button>
 
                     </div>
                     <form onSubmit={handleNewSessionOnClick}>

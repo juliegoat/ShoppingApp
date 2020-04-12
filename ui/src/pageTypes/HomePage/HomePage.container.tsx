@@ -16,7 +16,7 @@ const HomePageContainer = () => {
     const cartRef = useRef<HTMLDivElement>();
 
     const handleOutsideClick = (e: any) => {
-        if (cartRef.current === null) { return }
+        if (cartRef.current === null || cartRef.current === undefined) { return }
 
         if (cartRef.current.contains(e.target)) { return }
         setCartOpen(false)
