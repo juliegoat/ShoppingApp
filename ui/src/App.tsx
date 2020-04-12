@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,7 +11,7 @@ import './styles/index.scss';
 import { Navigation } from './partials';
 import * as Page from './pageTypes';
 
-function App() {
+const App = () => {
   return (
     <div id="App">
       <Router>
@@ -18,6 +19,10 @@ function App() {
 
         <Switch>
           <Route path="/" exact={true}>
+            <Page.NewSessionPage />
+          </Route>
+
+          <Route path="/room/:id">
             <Page.HomePage />
           </Route>
 
@@ -28,6 +33,6 @@ function App() {
       </Router>
     </div>
   );
-}
+};
 
 export default App;

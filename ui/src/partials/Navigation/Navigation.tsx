@@ -7,8 +7,8 @@ import './Navigation.scss';
 
 const Navigation = () => {
     return (
-        <Container>
-            <nav className="p-navigation">
+        <nav className="p-navigation">
+            <Container>
                 <ul>
                     <li>
                         <Link to="/">
@@ -17,15 +17,9 @@ const Navigation = () => {
                             </strong>
                         </Link>
                     </li>
-
-                    <li>
-                        <Link to="/test">
-                            Second Page
-                        </Link>
-                    </li>
                 </ul>
-            </nav>
-        </Container>
+            </Container>
+        </nav>
     )
 }
 

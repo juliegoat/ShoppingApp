@@ -22,11 +22,13 @@ const HomePage = (props: IHomePage) => {
                     <Cart isOpen={cartOpen} />
                 </div>
 
+                <Button label="Invite your friend" />
+
                 <StoreFront />
 
                 <Button label="NEXT STORE" />
                 <ul id="messages"></ul>
-                <form action="">
+                <form id="form" action="">
                     <input id="m" autoComplete="off" /><button>Send</button>
                 </form>
 

@@ -22,6 +22,9 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+
   <title>React App</title>
 </head>
 
@@ -38,24 +41,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-
-  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
-  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
-  <script>
-    $(function () {
-      var socket = io("http://localhost:3000/party?room=test123", { "transports": ["websocket"] })
-      $('form').submit(function () {
-        const msg = $('#m').val()
-        socket.emit('chat message', msg)
-        $('#m').val('')
-        return false
-      })
-      socket.on('chat message', function (msg) {
-        $('#messages').append($('<li>').text(msg))
-        window.scrollTo(0, document.body.scrollHeight)
-      })
-    });
-  </script>
 </body>
 
 </html>

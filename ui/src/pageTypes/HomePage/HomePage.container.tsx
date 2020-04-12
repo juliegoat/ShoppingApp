@@ -1,9 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import socket from '../../socket';
 
 import HomePage from './HomePage';
 
 const HomePageContainer = () => {
     const [cartOpen, setCartOpen] = useState(false);
+
+    const params = useParams();
 
     const cartRef = useRef<HTMLDivElement>();
 
@@ -20,6 +24,10 @@ const HomePageContainer = () => {
         return function cleanup() {
             document.removeEventListener("mousedown", handleOutsideClick);
         };
+    });
+
+    useEffect(() => {
+        socket(params.id);
     });
 
     return (

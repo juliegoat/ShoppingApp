@@ -4,13 +4,14 @@ import './Button.scss';
 
 interface IButtonProps {
     label: string,
+    handleClick?: any,
 }
 
 const Button = (props: IButtonProps) => {
-    const { label } = props;
+    const { label, handleClick } = props;
 
     return (
-        <button className="c-button">
+        <button className="c-button" onClick={handleClick}>
             {label}
         </button>
     )
