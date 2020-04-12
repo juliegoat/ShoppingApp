@@ -1,10 +1,19 @@
 @import '../../styles/variables';
 
 .p-navigation {
-    padding: 10px 0px;
+    padding-bottom: 10px;
     margin-bottom: $spacing-medium;
     background-color: #1D1D2E;
     color: white;
+    
+    &__bar {
+        margin-bottom: 10px;
+        height: 3px;
+        width: 100%;
+        background: #FF16FF;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FF16FF, #00FFFF);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FF16FF, #00FFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+    }
 
     .c-container {
         display: flex;

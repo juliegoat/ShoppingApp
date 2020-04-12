@@ -8,6 +8,8 @@ import './Navigation.scss';
 const Navigation = () => {
     return (
         <nav className="p-navigation">
+            <div className="p-navigation__bar" />
+
             <Container>
                 <ul>
                     <li>
