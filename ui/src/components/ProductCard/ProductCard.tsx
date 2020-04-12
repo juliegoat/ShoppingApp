@@ -1,11 +1,25 @@
 import React from 'react';
 
+import { Button } from '../../components';
+
 import './ProductCard.scss';
 
-const ProductCard = () => {
+const ProductCard = (props: any) => {
+    const { title, description, image, price } = props;
+
     return (
         <div className="c-product-card">
-            product
+            <div className="c-product-card__image">
+                <img src={image} />
+            </div>
+
+            <div className="c-product-card__description">
+                <h2>{title}</h2>
+                <p>{description}</p>
+                <p>${price}</p>
+            </div>
+
+            <Button label="Add to cart" color="#002798" />
         </div>
     )
 }
