@@ -27,14 +27,24 @@ describe("Item Store", () => {
         store.addItem(item1)
         store.addItem(item2)
 
-        const itemToRemove = store.items[0]
+        let itemToRemove = store.items[0]
 
         store.removeItem(itemToRemove.id)
         expect(store.items.length).toBe(1)
 
-        const resultItems = store.items.map(i => i.value)
+        let resultItems = store.items.map(i => i.value)
         expect(resultItems).not.toContain(item1)
         expect(resultItems).toContain(item2)
+
+        itemToRemove = store.items[0]
+
+        store.addItem(item1)
+        store.removeItem(store.items[0].id)
+
+        resultItems = store.items.map(i => i.value)
+        expect(resultItems).not.toContain(item2)
+        expect(resultItems).toContain(item1)
+
     })
 
 })
