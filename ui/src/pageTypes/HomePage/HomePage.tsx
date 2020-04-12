@@ -22,7 +22,7 @@ const HomePage = (props: IHomePage) => {
                         <iframe height="400px" src="https://api-demo.daily.co/CeodJrirq5I3BBoz3k8b"></iframe>
                         <div ref={cartRef}>
                             <button onClick={() => setCartOpen(!cartOpen)}>
-                                VIEW CART
+                                VIEW CART ITEMS
                             </button>
                             <Cart isOpen={cartOpen} />
                         </div>

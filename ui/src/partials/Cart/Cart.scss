@@ -1,16 +1,58 @@
+@import '../../styles/variables';
+
 .p-cart {
-    transform: translateX(-300px);
-    background: red;
+    transform: translateX(-400px);
+    background: white;
+    border-right: 1px solid #dedede;
     height: 100vh;
     top: 0px;
     position: fixed;
     left: 0px;
-    width: 300px;
+    width: 400px;
     transition: transform 0.8s ease;
     z-index: 102;
+    padding: $spacing-medium;
+    overflow: auto;
 
     &__open {
         transition: transform 0.8s ease;       
         transform: translateX(0px);
+    }
+
+    &__heading {
+        border-bottom: 1px solid #dedede;
+        padding-bottom: $spacing-small;
+        margin-bottom: $spacing-medium;
+    }
+
+    &__user {
+        display: block;
+        margin-bottom: $spacing-small;
+        width: 100%;
+        background-color: #00FFFF;
+        color: #1d1d2e;
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+
+    ul {
+        margin-bottom: $spacing-medium;
+
+        li {
+            list-style: none;
+            padding-bottom: $spacing-small;
+            margin-bottom: $spacing-small;
+
+            button {
+                margin-top: 10px;
+            }
+            
+            &:not(:last-child) {
+                border-bottom: 1px solid #dedede;
+            }
+        }
     }
 }
