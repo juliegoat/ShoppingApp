@@ -24,6 +24,8 @@ const HomePage = (props: IHomePage) => {
 
                 <StoreFront />
 
+                <iframe src="https://api-demo.daily.co/​xJEfnyy910HCyhDAgdu1"></iframe>
+
                 <Button label="NEXT STORE" color="red" />
             </Container>
         </>
