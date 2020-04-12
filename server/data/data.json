@@ -2,7 +2,7 @@
     "stores": {
         "WingIt": {
             "name": "Wing It!",
-            "logo": "",
+            "logo": "https://www.pinclipart.com/picdir/middle/45-456722_png-freeuse-big-image-png-flying-bird-clipart.png",
             "colorScheme": [
                 "#FCB69A",
                 "#DF9F9E",
@@ -11,13 +11,15 @@
             ],
             "properties": [
                 "makeup",
-                "beauty"
+                "beauty",
+                "cosmetics",
+                "woman"
             ],
             "products": {
                 "eyeliner": {
                     "name": "Sharp as a knife",
-                    "description": "Wing that eyeliner, WING. IT. Those wings are so sharp! Yaaasss",
-                    "image": "",
+                    "description": "Wing that eyeliner! WING! IT! Those wings are so sharp! Yaaasss",
+                    "image": "https://images.pexels.com/photos/2693644/pexels-photo-2693644.jpeg",
                     "price": 8.40,
                     "metadata": [
                         {
@@ -25,7 +27,8 @@
                                 "eyeliner",
                                 "makeup",
                                 "beauty",
-                                "skincare"
+                                "skincare",
+                                "cosmetics"
                             ]
                         },
                         {
@@ -38,10 +41,10 @@
                     ]
                 },
                 "mascara": {
-                    "name": "",
-                    "description": "Lashes so luscious, they"
-          "image": "",
-                    "price": 8.40,
+                    "name": "Fluffy Lashes",
+                    "description": "Lashes so luscious!",
+                    "image": "https://images.pexels.com/photos/2463027/pexels-photo-2463027.jpeg",
+                    "price": 9.40,
                     "metadata": [
                         {
                             "tags": [
@@ -55,11 +58,175 @@
                             "colors": [
                                 "black",
                                 "brown",
-                                "purple"
+                                "blue"
                             ]
                         }
                     ]
                 },
+                "lipgloss": {
+                    "name": "Hot Lips",
+                    "description": "Kiss the haters goodbye!",
+                    "image": "https://images.pexels.com/photos/3373746/pexels-photo-3373746.jpeg",
+                    "price": 7.00,
+                    "metadata": [
+                        {
+                            "tags": [
+                                "lipgloss",
+                                "makeup",
+                                "beauty",
+                                "skincare",
+                                "cosmetics"
+                            ]
+                        },
+                        {
+                            "colors": [
+                                "red",
+                                "pink",
+                                "purple",
+                                "magenta"
+                            ]
+                        }
+                    ]
+                },
+                "light_eyeshadow": {
+                    "name": "Forest Gnome",
+                    "description": "I live in a cave now.",
+                    "image": "https://images.pexels.com/photos/6161/makeup-make-up-artist-make-up.jpg",
+                    "price": 7.80,
+                    "metadata": [
+                        {
+                            "tags": [
+                                "eyeshadow",
+                                "makeup",
+                                "beauty",
+                                "skincare",
+                                "cosmetics"
+                            ]
+                        }
+                    ]
+                },
+                "dark_eyeshadow": {
+                    "name": "Flaming Dragon",
+                    "description": "Burn 'em up with the Flaming Dragon palette!",
+                    "image": "https://images.pexels.com/photos/1339340/pexels-photo-1339340.jpeg",
+                    "price": 7.80,
+                    "metadata": [
+                        {
+                            "tags": [
+                                "eyeshadow",
+                                "makeup",
+                                "beauty",
+                                "skincare",
+                                "cosmetics"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "TheBodega": {
+            "name": "The Bodega",
+            "logo": "https://seeklogo.com/images/L/La_Bodega-logo-DD0FEF078E-seeklogo.com.png",
+            "colorScheme": [
+                "#E9C590",
+                "#D76E25",
+                "#9D5826",
+                "#9C2913",
+                "#E0983E"
+            ],
+            "properties": [
+                "food",
+                "natural",
+                "snacks",
+                "sustainably-sourced"
+            ],
+            "products": {
+                "cornpuffs": {
+                    "name": "Corn Puffs",
+                    "description": "Corn that's like popcorn, but it's not...",
+                    "image": "https://images.pexels.com/photos/4034600/pexels-photo-4034600.jpeg",
+                    "price": 3.40,
+                    "metadata": [
+                        {
+                            "tags": [
+                                "snack",
+                                "cereal",
+                                "food",
+                                "corn"
+                            ]
+                        }
+                    ]
+                },
+                "pretzels": {
+                    "name": "Pretzels Yum",
+                    "description": "Hecking love these salty things",
+                    "image": "https://images.pexels.com/photos/1894325/pexels-photo-1894325.jpeg?auto=compress",
+                    "price": 2.40,
+                    "metadata": [
+                        {
+                            "tags": [
+                                "pretzels",
+                                "snacks",
+                                "snack",
+                                "food",
+                                "salty"
+                            ]
+                        }
+                    ]
+                },
+                "lipgloss": {
+                    "name": "Candy Hearts",
+                    "description": "These are literally my favorite candy in the world and I can't get them in the US!",
+                    "image": "https://images.pexels.com/photos/208006/pexels-photo-208006.jpeg?auto=compress",
+                    "price": 7.00,
+                    "metadata": [
+                        {
+                            "tags": [
+                                "candy",
+                                "holiday",
+                                "sweet",
+                                "hearts",
+                                "food",
+                                "snack"
+                            ]
+                        }
+                    ]
+                },
+                "seedbar": {
+                    "name": "Bird Food",
+                    "description": "Sometimes I just like to eat like a bird",
+                    "image": "https://images.pexels.com/photos/3026806/pexels-photo-3026806.jpeg?auto=compress",
+                    "price": 6.80,
+                    "metadata": [
+                        {
+                            "tags": [
+                                "snack",
+                                "seeds",
+                                "granola",
+                                "energy",
+                                "food"
+                            ]
+                        }
+                    ]
+                },
+                "almonds": {
+                    "name": "Almonds",
+                    "description": "Raw almonds. These are good.",
+                    "image": "https://images.pexels.com/photos/3997459/pexels-photo-3997459.jpeg?auto=compress",
+                    "price": 8.80,
+                    "metadata": [
+                        {
+                            "tags": [
+                                "almonds",
+                                "nuts",
+                                "healthy",
+                                "snack",
+                                "food",
+                                "raw"
+                            ]
+                        }
+                    ]
+                }
             }
         }
     }
