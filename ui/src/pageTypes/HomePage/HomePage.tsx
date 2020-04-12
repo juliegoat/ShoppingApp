@@ -9,10 +9,12 @@ interface IHomePage {
     cartOpen: boolean,
     setCartOpen: Function,
     cartRef: any,
+    handleNextClick: any,
+    store: any,
 }
 
 const HomePage = (props: IHomePage) => {
-    const { cartOpen, setCartOpen, cartRef } = props;
+    const { cartOpen, setCartOpen, cartRef, handleNextClick, store } = props;
 
     return (
         <>
@@ -28,12 +30,12 @@ const HomePage = (props: IHomePage) => {
                         </div>
                     </div>
 
-                    <StoreFront />
+                    {store}
                 </div>
 
                 <div className="p-home__controllers">
                     <Button label="End shopping" bg="transparent" color="#1D1D2E" border="1px solid #1D1D2E" />
-                    <Button label="Next store" />
+                    <Button label="Next store" handleClick={handleNextClick} />
                 </div>
             </Container>
         </>

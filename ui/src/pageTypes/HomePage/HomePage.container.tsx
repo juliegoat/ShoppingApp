@@ -2,9 +2,13 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import socket from '../../socket';
 
+import { StoreFront, OtherStoreFront } from '../../partials';
+
 import HomePage from './HomePage';
 
 const HomePageContainer = () => {
+    const [store, setStore] = useState(<StoreFront />);
+
     const [cartOpen, setCartOpen] = useState(false);
 
     const params = useParams();
@@ -26,6 +30,10 @@ const HomePageContainer = () => {
         };
     });
 
+    const handleNextClick = () => {
+        setStore(<OtherStoreFront />);
+    }
+
     useEffect(() => {
         socket(params.id);
     });
@@ -35,6 +43,8 @@ const HomePageContainer = () => {
             cartOpen={cartOpen}
             setCartOpen={setCartOpen}
             cartRef={cartRef}
+            handleNextClick={handleNextClick}
+            store={store}
         />
     )
 }

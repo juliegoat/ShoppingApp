@@ -21,7 +21,7 @@ const StoreFront = () => {
                             </li>
 
                             <li>
-                                SKINCARE, SUSTAINABLE, NATURAL
+                                BODY, SUSTAINABLE, NATURAL
                             </li>
                         </ul>
 
