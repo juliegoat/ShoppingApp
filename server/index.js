@@ -6,31 +6,22 @@ const app = express()
 const server = http.createServer(app)
 
 const socketIOConfig = {
-    // 'path': '/test',
-    'serveClient': false,
+    'serveClient': true,
     'transports': ['websocket']
 }
 const io = socketIO(server, socketIOConfig).of("/party")
-
 const port = 3000
 
-const index = `${__dirname}/index.html`
+const { registerSocketToRoom } = require("./squad")
 
-// Respond with index.  Only necessary for testing
-// app.get('/', (_, res) => res.sendFile(index))
 
 // Test socket.io connection
 io.on('connection', (socket) => {
-    const room = socket.handshake.query.room
-    socket.join(room)
-    socket.on(
-        'chat message',
-        (msg) => {
-            console.log(msg)
-            io.to(room).emit('chat message', msg)
-        }
-    )
+    const roomId = socket.handshake.query.room
+    registerSocketToRoom(io, socket, roomId)
 })
+
+// app.get('/', (_, res) => res.sendFile(`${__dirname}/index.html`))
 
 // Start HTTP Server listening to `port`
 server.listen(port, () => console.log(`Starting HTTP server on port ${port}`))
