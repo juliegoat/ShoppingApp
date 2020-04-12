@@ -1,0 +1,16 @@
+.p-cart {
+    transform: translateX(-300px);
+    background: red;
+    height: 100vh;
+    top: 0px;
+    position: fixed;
+    left: 0px;
+    width: 300px;
+    transition: transform 0.8s ease;
+    z-index: 102;
+
+    &__open {
+        transition: transform 0.8s ease;       
+        transform: translateX(0px);
+    }
+}

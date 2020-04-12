@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.p-navigation {
+    margin: $spacing-medium 0px;
+
+    ul {
+        display: block;
+
+        li {
+            display: inline-block;
+
+            + li {
+                margin-left: 15px;
+            }
+        }
+    }
+}

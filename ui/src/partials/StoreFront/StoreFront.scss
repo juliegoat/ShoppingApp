@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+
+.p-store-front {
+    color: white;
+
+    &__company {
+        display: flex;
+        justify-content: space-between;
+        background-color: #002798;
+        padding: $spacing-medium;
+        border-radius: 4px 4px 0px 0px;
+
+        &-description {
+            max-width: 700px;
+            
+            p {
+                opacity: 0.7;
+                margin-bottom: $spacing-small;
+            }
+        }
+    }
+
+    &__products {
+        background-color: gray;
+        padding: $spacing-medium;
+    }
+}

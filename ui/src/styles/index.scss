@@ -1,0 +1,14 @@
+@import './reset';
+
+@import './variables';
+
+#App {
+    position: relative;
+}
+
+body {
+    background-color: #fafafa;
+    color: #231e21;
+    font-family: $font-primary;
+    line-height: 1.5;
+}
