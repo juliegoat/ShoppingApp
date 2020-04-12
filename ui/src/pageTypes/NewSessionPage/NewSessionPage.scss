@@ -20,6 +20,20 @@
             opacity: 0.7;
         }
     }
+
+    &__buttons {
+        margin-bottom: $spacing-medium;
+
+        strong {
+            display: block;
+            margin-bottom: $spacing-small;
+        }
+
+        button {
+            margin-bottom: 10px;
+            margin-right: 15px;
+        }
+    }
 }
 
 .c-label {
