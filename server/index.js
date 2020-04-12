@@ -14,11 +14,6 @@ const io = socketIO(server, socketIOConfig).of("/party")
 
 const port = 3000
 
-const index = `${__dirname}/index.html`
-
-// Respond with index.  Only necessary for testing
-// app.get('/', (_, res) => res.sendFile(index))
-
 // Test socket.io connection
 io.on('connection', (socket) => {
     const room = socket.handshake.query.room
