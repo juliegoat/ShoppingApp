@@ -33,10 +33,13 @@
 
                 li {
                     display: inline-block;
+                    font-size: 13px;
                     text-decoration: none;
 
                     + li {
-                        margin-left: 10px;
+                        margin-left: $spacing-small;
+                        border-left: 1px solid #0935b5;
+                        padding-left: $spacing-small;
                     }
                 }
             }

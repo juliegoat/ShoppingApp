@@ -19,7 +19,7 @@ const ProductCard = (props: any) => {
                 <p>${price}</p>
             </div>
 
-            <Button label="Add to cart" color="#002798" />
+            <Button label="Add to cart" bg="#002798" />
         </div>
     )
 }

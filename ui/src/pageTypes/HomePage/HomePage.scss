@@ -1,0 +1,18 @@
+@import '../../styles/variables';
+
+.p-home {
+    &__store {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__controllers {
+        display: flex;
+        justify-content: flex-end;
+
+        button + button {
+            margin-left: $spacing-small;
+        }
+    }
+}

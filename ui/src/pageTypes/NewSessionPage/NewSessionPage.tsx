@@ -23,7 +23,7 @@ const NewSessionPage = (props: INewSessionPage) => {
 
                 <Card width="600px">
                     <form onSubmit={handleNewSessionOnClick}>
-                        <Button label="New session" handleClick={handleNewSessionOnClick} />
+                        <Button label="Start shopping" handleClick={handleNewSessionOnClick} />
                     </form>
                 </Card>
             </div>
